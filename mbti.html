@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>แบบทดสอบ MBTI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="center">
+
+<div class="card" id="warning">
+  <h2>⚠️ คำเตือน</h2>
+  <p>ความแม่นยำของผลลัพธ์<br>ขึ้นอยู่กับความซื่อสัตย์ของคุณ</p>
+  <button class="btn green" onclick="start()">รับทราบ</button>
+</div>
+
+<div class="card" id="quiz" style="display:none;">
+  <h3 id="q"></h3>
+  <button class="btn blue" onclick="answer(1)">เห็นด้วย</button>
+  <button class="btn yellow" onclick="answer(0)">สายกลาง</button>
+  <button class="btn red" onclick="answer(-1)">ไม่เห็นด้วย</button>
+</div>
+
+<div class="card" id="result" style="display:none;">
+  <h2>ผลลัพธ์ MBTI</h2>
+  <p id="type"></p>
+  <a href="index.html" class="btn blue">กลับหน้าแรก</a>
+</div>
+
+<script src="js/mbti.js"></script>
+</body>
+</html>
