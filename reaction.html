@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ทดสอบความไวการตอบสนอง</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="center">
+
+<div class="card" id="warning">
+  <h2>⚠️ คำเตือน</h2>
+  <p>
+    ความแม่นยำของผลลัพธ์<br>
+    ขึ้นอยู่กับสมาธิและความตั้งใจของคุณ
+  </p>
+  <button class="btn green" onclick="startTest()">รับทราบ และเริ่ม</button>
+</div>
+
+<div class="card" id="game" style="display:none;">
+  <h2 id="question">เตรียมตัว...</h2>
+  <div id="buttons"></div>
+  <p id="info"></p>
+</div>
+
+<div class="card" id="result" style="display:none;">
+  <h2>📊 ผลการทดสอบ</h2>
+  <p id="scoreText"></p>
+  <a href="index.html" class="btn blue">กลับหน้าแรก</a>
+</div>
+
+<script src="js/reaction.js"></script>
+</body>
+</html>
